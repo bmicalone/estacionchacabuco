@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estación Chacabuco</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+</head>
+<body>
+    <header class ="header-paginas">
+        <!-- logo -->
+        <a href="../index.html"> <img src="../images/logo.png" alt="logo de la empresa"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="pelotero.html">PELOTERO</a></li>
+                <li><a href="comida.html">COMIDA</a></li>
+                <li><a href="#">RESERVA</a></li>
+                <li><a href="nosotros.html">UBICACION</a></li>  
+            </ul>
+        </nav>
+    </header>
+    
+    <main class ="main-paginas">
+        <h2>Formulario de Reserva</h2>
+        <form action="#" method="post">
+            <label class="formulario" for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            
+            <label class="formulario" for="mail">Correo Electrónico:</label>
+            <input type="email" id="mail" name="mail" placeholder="Ingrese su correo electrónico" required>
+
+            <label class="formulario" for="estacion">Elige una Estación:</label>
+            <select class="formulario" id="estacion" name="estacion" required>
+                <option value="lunar">Estación Lunar</option>
+                 <option value="tierra">Estación Planeta Tierra</option>
+            </select>
+            
+            <label class="formulario" for="cumpleanos">Fecha del Cumpleaños:</label>
+            <input class="formulario" type="date" id="cumpleanos" name="cumpleanos" required>
+            
+            <label class="formulario" for="notas">Comentarios:</label>
+            <textarea id="notas" name="notas" rows="4" placeholder="Escriba aquí sus comentarios"></textarea>
+            
+            <button class="formulario" type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="footer-paginas">
+        <p>Seguinos en nuestras redes sociales</p>
+        <div class="redes" >  
+            <a href="https://www.facebook.com/estacionchacabuco" target="_blank"><img src="../images/facebook.png" alt="logo facebook"></a>
+            <a href="https://www.instagram.com/estacionchacabuco" target="_blank"><img src="../images/instagram.png" alt="logo instagram"></a>
+            <a href="https://www.tiktok.com/estacionchacabuco" target="_blank"><img src="../images/tik-tok.png" alt="logo tiktok"></a>
+            <a href="https://api.whatsapp.com/message/RPOO5KE4WCZSD1?autoload=1&app_absent=0" target="_blank"><img src="../images/whatsapp.png" alt="logo whatsapp"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
