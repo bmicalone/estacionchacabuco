@@ -287,16 +287,20 @@ footer img {
   color: white;
 }
 
+
+/*ESTO ERA ANTES DEL BOOTSTRAP*/
+
+/*
 .menuinfantil,
 .menuadultos {
   flex: 1;
   width: 100%;
   padding: 10px;
   justify-content: center;
-  display: grid; /* línea para que ambos menús utilicen el formato de cuadrícula */
+  display: grid; 
   gap: 10px;
 }
-
+ 
 .menuinfantil {
   grid-template-columns: repeat(6, 1fr);
 }
@@ -317,6 +321,13 @@ footer img {
   grid-template-rows: 300px 300px;
 }
 
+/*
+
+
+
+
+/*PAGINA RESERVA*/
+
 /* Estilo específico para el placeholder en los campos de entrada y textarea */
 ::placeholder {
   font-family: "Noto Serif", serif;
@@ -324,7 +335,8 @@ footer img {
   color: #999;
 }
 
-/*PAGINA RESERVA*/
+
+
 
 .main-paginas h2 {
   text-align: center;
@@ -555,6 +567,8 @@ form button:hover {
     margin: 0px;
   }
 
+  /* lo saco porque agrego bootstrap
+
   .menuinfantil .box:nth-child(2),
   .menuinfantil .box:nth-child(3),
   .menuinfantil .box:nth-child(5) {
@@ -572,6 +586,8 @@ form button:hover {
     padding: 0px;
     margin: 0px;
   }
+
+  */
 
 }
 
