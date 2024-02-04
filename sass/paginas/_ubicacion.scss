@@ -1,0 +1,23 @@
+
+
+.ubicacion{
+        text-align: center;
+        @include flex (column, center, center);
+        h1{
+            text-align: center; 
+        }
+        p{
+            text-align: center;
+            margin: 0px; 
+        }  
+}
+
+.mapa {
+    display: flex;
+    max-width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+    justify-self: center;
+  }
+
+

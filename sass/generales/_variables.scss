@@ -1,0 +1,15 @@
+
+$font: 'Noto Serif', serif; 
+$fontRoboto: 'Roboto', serif;
+
+$azuloscuro: #00183a;
+$azulclaro: #042452;
+$blanco: #ffff;
+
+@mixin flex ($direccion, $justify, $aling){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $aling;
+}
+

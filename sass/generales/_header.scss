@@ -1,0 +1,57 @@
+/* Header común a todas las páginas */
+.header-paginas {
+    background-color: $azuloscuro;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    img {
+        width: 250px;
+        margin-left: 10px;
+        }
+    nav {
+        margin-right: 40px; 
+    }
+  }
+
+
+/* Header específico para la página de inicio */
+.header-inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 45px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+
+
+/* header en comun */
+header{
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            margin-right: 10px;
+            margin-left: 15px;
+        }
+        a {
+            color: $blanco;
+            text-decoration: none;
+        }
+    }   
+}
+
+
+    
+  

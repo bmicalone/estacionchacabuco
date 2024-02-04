@@ -1,37 +1,50 @@
-/* Paleta de colores
-   #00183a azul oscuro (encabezado)
-   #042452 azul (menos) oscuro
-   #60a2d2 celeste
-   #8dc563 verde manzana
-   #1cb0ae verde azulado
-   #275978 petroleo
-   #0CC0DF crea tu cumple */
-
+@charset "UTF-8";
 /* Font/tipografía: font-family: 'Noto Serif', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
-
 /*roboto*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo global del body */
 body {
   font-family: "Noto Serif", serif;
   color: white;
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Mínimo 100% del alto de la ventana de visualización */
-  justify-content: space-between; /* Empuja el contenido hacia arriba y hacia abajo */
+  justify-content: space-between;
+  align-items: space-between;
+  min-height: 100vh;
 }
 
-h1{
+h1 {
   font-size: 28px;
+}
+
+.main-paginas {
+  background-color: #042452;
+  margin-top: 110px;
+  padding: 20px;
+  flex-grow: 1;
+}
+.main-paginas h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.main-paginas p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+p {
+  color: white;
 }
 
 /* Header común a todas las páginas */
@@ -47,6 +60,13 @@ h1{
   align-items: center;
   z-index: 1000;
 }
+.header-paginas img {
+  width: 250px;
+  margin-left: 10px;
+}
+.header-paginas nav {
+  margin-right: 40px;
+}
 
 /* Header específico para la página de inicio */
 .header-inicio {
@@ -61,94 +81,21 @@ h1{
   z-index: 1000;
 }
 
-/* Estilo del logo dentro del header */
-header img {
-  width: 250px;
-  margin-left: 10px;
-}
-
-/* Estilo del nav */
-nav {
-  margin-right: 40px; /* Margen a la derecha para las páginas que no son de inicio */
-}
-
-/* Estilo de la lista del header */
+/* header en comun */
 header ul {
   list-style: none;
   display: flex;
 }
-
-/* Estilo de los elementos de la lista del header */
-header li {
+header ul li {
   margin-right: 10px;
   margin-left: 15px;
 }
-
-/* Estilo de los enlaces del header */
-header a {
+header ul a {
   color: white;
   text-decoration: none;
 }
 
-
-
-/* Estilo del main */
-.main-paginas {
-  background-color: #042452;
-  margin-top: 110px;
-  padding: 20px;
-  flex-grow: 1;
-}
-
-
-
-/* Estilo específico para el elemento <p> dentro de .contenido-container en la página de inicio */
-.contenido-container p {
-  font-size: 25px;
-  text-align: center;
-}
-
-.contenido-container h1 {
-  font-size: 40px;
-  text-align: center;
-}
-
-/* Fondo de la imagen aplicado al body */
-body.pagina-inicio {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../images/fondo-index.jpeg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; /* Para que la imagen de fondo se mantenga fija al desplazarse */
-}
-
-/* Contenedor para el contenido y el fondo */
-.contenido-container {
-  z-index: 1;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Estilo de la imagen dentro de .contenido-container */
-.contenido-container img {
-  max-width: 100%;
-  height: auto;
-  width: 200px;
-}
-
-
-
-/* Estilo de los párrafos en general */
-p {
-  color: white;
-}
-
-
 /* Estilo del footer pagina inicio*/
-
 .footer-inicio {
   padding: 10px;
   text-align: center;
@@ -158,9 +105,7 @@ p {
   bottom: 0;
   width: 100%;
 }
-
-/* Estilo de las imágenes dentro del footer */
-footer img {
+.footer-inicio img {
   width: 35px;
   margin-right: 8px;
 }
@@ -170,11 +115,10 @@ footer img {
   text-align: center;
   font-size: smaller;
 }
-
-/* Estilo de las tres imágenes en el footer */
-.tresimagenes {
+.box-redes .tresimagenes {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: left;
   margin-left: 0px;
 }
@@ -191,35 +135,55 @@ footer img {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
 }
-
-/* Estilo del texto dentro del footer */
 .footer-paginas p {
   margin: 0;
   text-align: left;
   margin-bottom: 10px;
 }
-
-/* Estilo de las imágenes dentro del footer */
 .footer-paginas img {
   width: 40px;
   margin-right: 10px;
   margin-bottom: 5px;
 }
-
-/* Estilo del contenedor de las imágenes */
 .footer-paginas .redes {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: left;
 }
 
+body.pagina-inicio {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../images/fondo-index.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Para que la imagen de fondo se mantenga fija al desplazarse */
+}
+body.pagina-inicio .contenido-container {
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body.pagina-inicio .contenido-container h1 {
+  font-size: 40px;
+  text-align: center;
+}
+body.pagina-inicio .contenido-container p {
+  font-size: 25px;
+  text-align: center;
+}
+body.pagina-inicio .contenido-container img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
 
-
-/*PAGINA PELOTERO*/
-/* Estilo de la sección de las imágenes */
-.planetatierra {
+.planetatierra, .estacionlunar {
   display: grid;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
   grid-template-rows: 420px 250px 250px;
@@ -230,13 +194,8 @@ footer img {
 }
 
 .estacionlunar {
-  display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   grid-template-rows: 430px 300px 300px 300px;
-  grid-gap: 10px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 20px;
 }
 
 /* Estilo de la caja de cada imagen  ;*/
@@ -245,85 +204,46 @@ footer img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Estilo de las imágenes dentro de las cajas */
 .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.main-paginas h1 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-
-.main-paginas p {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-
-.box:hover{
-  transform: scale(1.15,1.15);
+.box:hover {
+  transform: scale(1.15, 1.15);
   transition: 1.5s;
-
-}  
-
-
-
-/* PAGINA COMIDA */
-
-
-.menuinfantil h2,
-.menuadultos h2 {
-  margin-bottom: 40px;
 }
 
-.menuinfantil p,
-.menuadultos p {
-  margin-top: 20px;
-}
-
-.main-paginas .pagina-menu {
+.pagina-menu {
   display: flex;
   justify-content: space-around;
 }
-
-.infantil-adultos {
+.pagina-menu .infantil-adultos {
   display: flex;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.menu-section {
+.pagina-menu .infantil-adultos .menu-section {
   flex: 1;
   margin: 30px;
   text-align: justify;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   color: white;
 }
-
-
-
-
-/*PAGINA RESERVA*/
-
-/* Estilo específico para el placeholder en los campos de entrada y textarea */
+.pagina-menu .infantil-adultos .menu-section .menuinfantil h2, .pagina-menu .infantil-adultos .menu-section .menuadultos h2 {
+  margin-bottom: 40px;
+}
+.pagina-menu .infantil-adultos .menu-section .menuinfantil p, .pagina-menu .infantil-adultos .menu-section .menuadultos p {
+  margin-top: 20px;
+}
 ::placeholder {
   font-family: "Noto Serif", serif;
   font-style: italic;
   color: #999;
 }
 
-
-
-
-.main-paginas h2 {
+.main-paginas h1 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -331,28 +251,18 @@ footer img {
 }
 
 /* Estilo del formulario */
-.formulario {
-  display: block;
-}
-
-/* Estilos generales del formulario */
 form {
+  display: block;
   max-width: 600px;
   margin: 0 auto;
 }
-
-/* Estilo de las etiquetas del formulario */
 form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: white;
 }
-
-/* Estilo de los campos de entrada del formulario */
-form input[type="text"],
-form input[type="email"],
-form textarea {
+form textarea, form input[type=email], form input[type=text] {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
@@ -360,8 +270,6 @@ form textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-/* Estilo del botón de envío del formulario */
 form button {
   background-color: #00183a;
   color: white;
@@ -370,35 +278,27 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* Estilo del botón al pasar el mouse sobre él */
 form button:hover {
   background-color: #042452;
 }
-
-
-
-#cumpleanos {
+form #cumpleanos, form #estacion {
   margin-bottom: 20px;
 }
-
-#estacion {
-  margin-bottom: 20px;
-}
-
-
-
-/* PAGINA UBICACION */
-.main-paginas .ubicacion h1,
-.main-paginas .ubicacion p {
+.ubicacion {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+.ubicacion h1 {
+  text-align: center;
+}
+.ubicacion p {
+  text-align: center;
+  margin: 0px;
 }
 
-/* no puedo centrar el mapa */
 .mapa {
   display: flex;
   max-width: 100%;
@@ -407,162 +307,115 @@ form button:hover {
   justify-self: center;
 }
 
-/* --------*/
-
 @media screen and (max-width: 500px) {
   .header-inicio nav {
-    text-align: center; 
+    text-align: center;
     width: 100%;
     margin: 0px 0px;
-  }    
-  
-  .header-inicio ul {
+  }
+  .header-inicio nav ul {
     padding: 0;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     margin-block-start: 5px;
     margin-block-end: 5px;
     padding-inline-start: 0px;
   }
-
-  .header-inicio li {
-    margin: 0 5px; 
+  .header-inicio nav ul li {
+    margin: 0px 10px 15px 10px;
   }
- 
+  .header-inicio nav ul a {
+    font-size: 12px;
+  }
   .header-paginas {
     padding: 0;
     flex-direction: column; /* Cambiado a columna para apilar los elementos */
     align-items: center;
   }
-
-
-  /* Estilo del logo en pantallas más pequeñas */
-  header img {
+  .header-paginas img {
     width: 200px;
-    margin: 10px 0px; 
+    margin: 10px 0px;
   }
-
-  /* Estilo del nav en pantallas más pequeñas */
-  nav {
+  .header-paginas nav {
     text-align: center;
     width: 100%;
     margin: 0px;
     display: flex;
-    justify-content: center; 
-
+    justify-content: center;
   }
-
-  .header-paginas ul {
+  .header-paginas nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: row;
     align-content: space-around;
-    align-items:center;
-  }
-
-  .header-paginas li, .header-inicio li {
-    margin: 0px 10px 15px 10px;
-  }
-
-  .header-paginas a, .header-inicio a {
-    font-size: 12px;
-  }
-  
-  .header-paginas nav ul {
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  
+  .header-paginas nav ul li {
+    margin: 0px 10px 15px 10px;
+  }
+  .header-paginas nav ul a {
+    font-size: 12px;
+  }
   .main-paginas h1 {
     font-size: 25px;
   }
-
   .main-paginas p {
     font-size: 15px;
   }
-
   .footer-paginas p {
     font-size: 12px;
   }
-
   .footer-paginas a {
     font-size: 12px;
   }
-
   iframe {
     width: 350px;
     height: 450px;
   }
-
-  .planetatierra,
-  .estacionlunar {
+  .planetatierra, .estacionlunar {
     grid-template-columns: repeat(2, 1fr);
     padding: 0px;
-  }
-
-  .estacionlunar {
-    grid-template-rows: 300px 300px 300px 180px 180px 180px 180px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-  }
-
-  .planetatierra{
     grid-template-rows: 320px 320px 220px 220px 220px;
     padding-bottom: 10px 0px;
   }
-
-  .estacionlunar .box:nth-child(7),
-  .estacionlunar .box:nth-child(8)  {
-    display: none; /* Menos imagenes en pagina pelotero */
-  }
-
-  .planetatierra .box:nth-child(9),
-  .planetatierra .box:nth-child(5),
-  .planetatierra .box:nth-child(6),
-  .planetatierra .box:nth-child(7),
-  .planetatierra .box:nth-child(2) {
+  .planetatierra .box:nth-child(9), .estacionlunar .box:nth-child(9), .planetatierra .box:nth-child(5), .estacionlunar .box:nth-child(5), .planetatierra .box:nth-child(6), .estacionlunar .box:nth-child(6), .planetatierra .box:nth-child(7), .estacionlunar .box:nth-child(7), .planetatierra .box:nth-child(2), .estacionlunar .box:nth-child(2) {
     display: none;
   }
-
-
+  .estacionlunar {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+    grid-template-rows: 300px 300px 300px 180px 180px 180px 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .estacionlunar .box:nth-child(7), .estacionlunar .box:nth-child(8) {
+    display: none;
+  }
   .infantil-adultos {
-    display: block; /* Cambia a display:block cuando el ancho es 500px o menos */
+    display: flex;
+    flex-direction: column;
     max-width: none;
     margin: 0px;
     padding: 0px;
   }
-
-  .infantil-adultos h2 {
+  .infantil-adultos .menu-section {
+    padding: 0px;
+    margin: 0px;
+  }
+  .infantil-adultos .menu-section h2 {
     font-size: 25px;
     margin: 5px;
     padding-top: 20px;
   }
-
-  .infantil-adultos p {
+  .infantil-adultos .menu-section p {
     font-size: 14px;
     padding: 10px;
     margin: 0px;
   }
-
-  .menu-section{
-    padding: 0px;
-    margin: 0px;
-  }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=estilos.css.map */

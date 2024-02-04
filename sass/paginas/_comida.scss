@@ -1,0 +1,47 @@
+
+.pagina-menu {
+  display: flex;
+  justify-content: space-around;
+    .infantil-adultos {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        .menu-section {
+            flex: 1;
+            margin: 30px;
+            text-align: justify;
+            font-family: $fontRoboto;
+            color: $blanco;
+            .menuinfantil {
+                h2 {
+                    margin-bottom: 40px;
+                }
+                p {
+                    margin-top: 20px;
+                }
+            }
+            .menuadultos {
+                @extend .menuinfantil
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

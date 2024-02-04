@@ -6,7 +6,8 @@
     <title>Estación Chacabuco</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/estilos.css" > 
+    <!--  <link rel="stylesheet" href="../css/style.css" > -->
     <link rel="icon" type="image/png" href="../images/logo.png" />
   </head>
   <body>
@@ -27,54 +28,78 @@
     </header>
 
     <main class="main-paginas pagina-menu">
-      
-      <!-- ANTES DE BOOTSTRAP -->
-      <!-- <section class="infantil-adultos">
+
+      <section class="infantil-adultos">
         <section class="menu-section">
-          <h2>Menú Infantil</h2>
+          <h1>Menú Infantil</h1>
 
           <div class="menuinfantil">
-            <div class="box comida1">
-              <img src="../images/comida1.jpg" alt="comida1" />
+            <!--CON BOOTSTRAP DOS CARRUSELES DE IMAGENES -->
+            <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/comida1.jpg" class="d-block w-100" alt="nutrikids">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/comida2.jpg" class="d-block w-100" alt="fingersdepollo">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/comida3.jpg" class="d-block w-100" alt="cereales">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/comida6.jpg" class="d-block w-100" alt="sadwiches">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="box comida2">
-              <img src="../images/comida 2.jpg" alt="comida2" />
-            </div>
-            <div class="box comida3">
-              <img src="../images/comida3.jpg" alt="comida3" />
-            </div>
-            <div class="box comida6">
-              <img src="../images/comida6.jpg" alt="comida6" />
-            </div>
-            <div class="box comida7">
-              <img src="../images/comida7.jpg" alt="comida7" />
-            </div>
+            <p>
+              El menú de Estación Chacabuco incluye juegos, baile y mucha 
+              diversión. Pero también cereales, sandwiches de jamón y queso,
+              yogurt, alfajores de maicena y jugo de naranja. Si elegís la opción
+              Chacafull los chicos disfrutan de exquisitos fingers de pollo con
+              papas fritas y gaseosas.
+            </p>
           </div>
-          <p>
-            El menú de Estación Chacabuco incluye juegos, baile y mucha 
-            diversión. Pero también cereales, sandwiches de jamón y queso,
-            yogurt, alfajores de maicena y jugo de naranja. Si elegís la opción
-            Chacafull los chicos disfrutan de exquisitos fingers de pollo con
-            papas fritas y gaseosas.
-          </p>
         </section>
 
         <section class="menu-section">
-          <h2>Menú para adultos</h2>
+          <h1>Menú para adultos</h1>
 
           <div class="menuadultos">
-            <div class="box">
-              <img src="../images/comida4.jpg" alt="comida4" />
+            
+            <!--CON BOOTSTRAP DOS CARRUSELES DE IMAGENES -->
+            <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/comida4.jpg" class="d-block w-100" alt="papasfritas">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/comida5.jpg" class="d-block w-100" alt="adultos">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/comida8.png" class="d-block w-100" alt="pastafrola">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/comida9.png" class="d-block w-100" alt="lisos">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="box">
-              <img src="../images/comida5.jpg" alt="comida5" />
-            </div>
-            <div class="box">
-              <img src="../images/comida8.jpg" alt="comida8" />
-            </div>
-            <div class="box">
-              <img src="../images/comida9.jpg" alt="comida9" />
-            </div>
+
           </div>
           <p>
             En los cumples de Estación Chacabuco comen rico chicos y grandes!
@@ -82,93 +107,11 @@
             vengas con tus chicos a disfrutar
           </p>
         </section>
-   
-    -->
-    
-
-    <section class="infantil-adultos">
-      <section class="menu-section">
-        <h2>Menú Infantil</h2>
-
-        <div class="menuinfantil">
-          <!--CON BOOTSTRAP DOS CARRUSELES DE IMAGENES -->
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../images/comida1.jpg" class="d-block w-100" alt="comida1">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/comida2.jpg" class="d-block w-100" alt="comida2">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/comida3.jpg" class="d-block w-100" alt="comida3">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/comida6.jpg" class="d-block w-100" alt="comida6">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <p>
-            El menú de Estación Chacabuco incluye juegos, baile y mucha 
-            diversión. Pero también cereales, sandwiches de jamón y queso,
-            yogurt, alfajores de maicena y jugo de naranja. Si elegís la opción
-            Chacafull los chicos disfrutan de exquisitos fingers de pollo con
-            papas fritas y gaseosas.
-          </p>
-        </div>
       </section>
 
-      <section class="menu-section">
-        <h2>Menú para adultos</h2>
-
-        <div class="menuadultos">
           
-          <!--CON BOOTSTRAP DOS CARRUSELES DE IMAGENES -->
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../images/comida4.jpg" class="d-block w-100" alt="comida4">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/comida4.jpg" class="d-block w-100" alt="comida5">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/comida8.jpg" class="d-block w-100" alt="comida8">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/comida9.jpg" class="d-block w-100" alt="comida9">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
-        </div>
-        <p>
-          En los cumples de Estación Chacabuco comen rico chicos y grandes!
-          Preparamos para cada cumple lo salado y lo dulce para que vos solo
-          vengas con tus chicos a disfrutar
-        </p>
-      </section>
-    </section>
-
-        
-
-    
+      
 
 
 

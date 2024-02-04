@@ -1,0 +1,60 @@
+::placeholder {
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    color: #999;
+  }
+  
+
+.main-paginas h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+  
+/* Estilo del formulario */
+form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $blanco;
+    }
+    textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="text"]{
+        @extend textarea;
+    }
+    input[type="email"]{
+        @extend textarea;
+    }
+    button {
+        background-color: $azuloscuro;
+        color: $blanco;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            background-color: $azulclaro;
+        }
+    }
+    #cumpleanos {
+        margin-bottom: 20px;
+    }
+    #estacion {
+        @extend #cumpleanos;
+    }
+    
+      
+}
+
