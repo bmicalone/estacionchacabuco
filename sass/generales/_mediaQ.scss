@@ -126,8 +126,8 @@
 
 /* Tablet: headar footer igual a móvil */
 
-@media (min-width: 501px) and (max-width: 768px) {
-    .header-inicio {
+@media (min-width: 501px) and (max-width: 8008px) {
+    .header-inicio { 
         nav {
             text-align: center; 
             width: 100%;
@@ -201,17 +201,38 @@
       }
     } 
 
+    .planetatierra {
+        grid-template-columns: repeat(4, 1fr); 
+        padding: 0px;
+        grid-template-rows: 320px 250px 250px;
+        padding-bottom: 10px 0px; 
+        .box:nth-child(9), .box:nth-child(6), .box:nth-child(7) {  
+              display: none;   
+          }  
+      }   
+   
+      .estacionlunar {  
+          grid-template-columns: repeat(4, 1fr); 
+          padding: 0px; 
+          grid-template-rows: 300px 250px 250px; 
+          padding-top: 10px; 
+          padding-bottom: 10px;
+          .box:nth-child(7), .box:nth-child(8) {  
+              display: none; 
+          } 
+      } 
+
     .infantil-adultos { 
         display: flex;
-        flex-direction: column;
-        max-width: none; 
+        flex-direction: row;
+        max-width: max-content; 
         margin: 0px; 
         padding: 0px; 
         .menu-section{ 
           padding: 0px; 
           margin: 0px;  
           h2 {
-              font-size: 25px;
+              font-size: 20px;
               margin: 5px;
               padding-top: 20px;
           }
@@ -221,8 +242,10 @@
               margin: 0px;
           }
         }
-      }  
-} 
+    }
+}  
+
+
 
 
 
