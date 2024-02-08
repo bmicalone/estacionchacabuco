@@ -368,10 +368,10 @@ form #cumpleanos, form #estacion {
     font-size: 12px;
   }
   .main-paginas h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .main-paginas p {
-    font-size: 15px;
+    font-size: 12px;
   }
   .footer-paginas p {
     font-size: 12px;
@@ -479,10 +479,10 @@ form #cumpleanos, form #estacion {
     font-size: 12px;
   }
   .main-paginas h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .main-paginas p {
-    font-size: 15px;
+    font-size: 12px;
   }
   .footer-paginas p {
     font-size: 12px;
@@ -493,7 +493,7 @@ form #cumpleanos, form #estacion {
   .planetatierra, .estacionlunar {
     grid-template-columns: repeat(4, 1fr);
     padding: 0px;
-    grid-template-rows: 320px 250px 250px;
+    grid-template-rows: 280px 200px 200px;
     padding-bottom: 10px 0px;
   }
   .planetatierra .box:nth-child(9), .estacionlunar .box:nth-child(9), .planetatierra .box:nth-child(6), .estacionlunar .box:nth-child(6), .planetatierra .box:nth-child(7), .estacionlunar .box:nth-child(7) {
@@ -502,7 +502,7 @@ form #cumpleanos, form #estacion {
   .estacionlunar {
     grid-template-columns: repeat(4, 1fr);
     padding: 0px;
-    grid-template-rows: 300px 250px 250px;
+    grid-template-rows: 300px 200px 220px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -530,5 +530,12 @@ form #cumpleanos, form #estacion {
     font-size: 14px;
     padding: 10px;
     margin: 0px;
+  }
+  .form {
+    max-width: 80%;
+  }
+  .mapa {
+    max-width: 85%;
+    max-height: 65%;
   }
 }/*# sourceMappingURL=estilos.css.map */
