@@ -24,13 +24,17 @@ h1 {
   font-size: 28px;
 }
 
+h2 {
+  font-size: 28px;
+}
+
 .main-paginas {
   background-color: #042452;
   margin-top: 110px;
   padding: 20px;
   flex-grow: 1;
 }
-.main-paginas h1 {
+.main-paginas h2 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -207,8 +211,7 @@ body.pagina-inicio .contenido-container img {
 .box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .box:hover {
   transform: scale(1.15, 1.15);
@@ -238,11 +241,6 @@ body.pagina-inicio .contenido-container img {
 .pagina-menu .infantil-adultos .menu-section .menuinfantil p, .pagina-menu .infantil-adultos .menu-section .menuadultos p {
   margin-top: 20px;
 }
-::-moz-placeholder {
-  font-family: "Noto Serif", serif;
-  font-style: italic;
-  color: #999;
-}
 ::placeholder {
   font-family: "Noto Serif", serif;
   font-style: italic;
@@ -268,7 +266,23 @@ form label {
   font-weight: bold;
   color: white;
 }
-form textarea, form input[type=email], form input[type=text] {
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type=mail] {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
@@ -287,9 +301,13 @@ form button {
 form button:hover {
   background-color: #042452;
 }
-form #cumpleanos, form #estacion {
+form #cumpleanos {
   margin-bottom: 20px;
 }
+form #estacion {
+  margin-bottom: 20px;
+}
+
 .ubicacion {
   text-align: center;
   display: flex;
@@ -332,7 +350,14 @@ form #cumpleanos, form #estacion {
     margin: 0px 10px 15px 10px;
   }
   .header-inicio nav ul a {
-    font-size: 12px;
+    font-size: 25px;
+  }
+  .header-inicio .header-inicio ul a {
+    font-size: 25px;
+  }
+  .footer-inicio img {
+    width: 55px;
+    margin-right: 10px;
   }
   .header-paginas {
     padding: 0;
@@ -367,8 +392,17 @@ form #cumpleanos, form #estacion {
   .header-paginas nav ul a {
     font-size: 12px;
   }
+  .contenido-container section h1 {
+    font-size: 40px;
+  }
+  .contenido-container section img {
+    width: 100px;
+  }
   .main-paginas h1 {
     font-size: 20px;
+  }
+  .main-paginas h2 {
+    font-size: 18px;
   }
   .main-paginas p {
     font-size: 12px;
@@ -399,7 +433,7 @@ form #cumpleanos, form #estacion {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .estacionlunar .box:nth-child(7), .estacionlunar .box:nth-child(8) {
+  .estacionlunar .box:nth-child(6), .estacionlunar .box:nth-child(8) {
     display: none;
   }
   .infantil-adultos {
@@ -414,7 +448,7 @@ form #cumpleanos, form #estacion {
     margin: 0px;
   }
   .infantil-adultos .menu-section h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
     padding-top: 20px;
   }
@@ -481,6 +515,9 @@ form #cumpleanos, form #estacion {
   .main-paginas h1 {
     font-size: 20px;
   }
+  .main-paginas h1 {
+    font-size: 18px;
+  }
   .main-paginas p {
     font-size: 12px;
   }
@@ -512,7 +549,6 @@ form #cumpleanos, form #estacion {
   .infantil-adultos {
     display: flex;
     flex-direction: row;
-    max-width: -moz-max-content;
     max-width: max-content;
     margin: 0px;
     padding: 0px;
@@ -538,4 +574,6 @@ form #cumpleanos, form #estacion {
     max-width: 85%;
     max-height: 65%;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */

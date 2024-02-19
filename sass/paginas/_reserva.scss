@@ -32,10 +32,20 @@ form {
         box-sizing: border-box;
     }
     input[type="text"]{
-        @extend textarea;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
-    input[type="email"]{
-        @extend textarea;
+    input[type="mail"]{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
     button {
         background-color: $azuloscuro;
@@ -52,7 +62,7 @@ form {
         margin-bottom: 20px;
     }
     #estacion {
-        @extend #cumpleanos;
+        margin-bottom: 20px;
     }
     
       
