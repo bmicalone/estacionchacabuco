@@ -339,15 +339,18 @@ form #estacion {
     margin: 0px 0px;
   }
   .header-inicio nav ul {
+    width: 100%;
     padding: 0;
     display: flex;
     justify-content: space-around;
     margin-block-start: 5px;
     margin-block-end: 5px;
     padding-inline-start: 0px;
+    font-size: 25px;
   }
   .header-inicio nav ul li {
     margin: 0px 10px 15px 10px;
+    font-size: 25px;
   }
   .header-inicio nav ul a {
     font-size: 25px;

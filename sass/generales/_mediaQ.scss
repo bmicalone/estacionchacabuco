@@ -7,14 +7,17 @@
             width: 100%;
             margin: 0px 0px;
             ul {
+                width: 100%;
                 padding: 0;
                 display: flex;
                 justify-content: space-around; 
                 margin-block-start: 5px;
                 margin-block-end: 5px;
                 padding-inline-start: 0px;
+                font-size: 25px;
                 li {
-                    margin: 0px 10px 15px 10px; 
+                    margin: 0px 10px 15px 10px;
+                    font-size: 25px;
                 }
                 a {
                     font-size: 25px;
@@ -243,7 +246,7 @@
           }  
       }   
    
-      .estacionlunar {  
+    .estacionlunar {  
           grid-template-columns: repeat(4, 1fr); 
           padding: 0px; 
           grid-template-rows: 300px 200px 220px; 
