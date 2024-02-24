@@ -112,9 +112,10 @@ header nav ul a {
 }
 .header-inicio nav ul {
   justify-content: right;
+  font-size: 15px;
 }
 .header-inicio nav ul a {
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 /* Estilo del footer pagina inicio*/
