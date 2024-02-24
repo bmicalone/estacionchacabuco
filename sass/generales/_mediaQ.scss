@@ -6,42 +6,40 @@
             text-align: center; 
             width: 100%;
             margin: 0px 0px;
+            justify-content: center; 
             ul {
                 width: 100%;
                 padding: 0;
                 display: flex;
-                justify-content: space-around; 
+                justify-content: center; 
                 margin-block-start: 5px;
                 margin-block-end: 5px;
                 padding-inline-start: 0px;
-                font-size: 25px;
                 li {
                     margin: 0px 10px 15px 10px;
-                    font-size: 25px;
+                    justify-content: center;
                 }
                 a {
-                    font-size: 25px;
+                    font-size: 1.5rem;
                 }
 
             }    
         } 
-      .header-inicio{
-        ul {
-            a{
-                font-size: 25px;
-            }
-        }
         
       }   
-    }
+    
 
     .footer-inicio {
         img {
             width: 55px;
             margin-right: 10px;
           }
+        a{
+            font-size: 12px;
+        }
     
     }
+
    
     .header-paginas {
         padding: 0;
@@ -62,7 +60,8 @@
                 padding: 0;
                 display: flex;
                 flex-direction: row;
-                align-content: space-around;
+                justify-content: center;
+                align-content: center;
                 align-items:center;
                 margin: 0;
                 padding: 0;
@@ -111,6 +110,8 @@
       width: 350px;
       height: 450px;
     }
+
+    
   
     .planetatierra {
       grid-template-columns: repeat(2, 1fr); 
@@ -133,7 +134,7 @@
         }
     }
   
-    .infantil-adultos { 
+    .infantil-adultos {
       display: flex;
       flex-direction: column;
       max-width: none; 
@@ -142,7 +143,7 @@
       .menu-section{ 
         padding: 0px; 
         margin: 0px;  
-        h2 {
+        h1 {
             font-size: 20px;
             margin: 5px;
             padding-top: 20px;
@@ -168,7 +169,7 @@
             ul {
                 padding: 0;
                 display: flex;
-                justify-content: space-around; 
+                justify-content: center; 
                 margin-block-start: 5px;
                 margin-block-end: 5px;
                 padding-inline-start: 0px;
@@ -195,18 +196,18 @@
             text-align: center;
             width: 100%;
             margin: 0px;
-            display: flex;
-            justify-content: center; 
+            display: flex; 
             ul {
                 list-style: none;
                 padding: 0;
                 display: flex;
                 flex-direction: row;
-                align-content: space-around;
+                align-content: right;
                 align-items:center;
                 margin: 0;
                 padding: 0;
                 list-style: none;
+                justify-content: center; 
                 li {
                     margin: 0px 10px 15px 10px;
                 }
@@ -265,8 +266,9 @@
         padding: 0px; 
         .menu-section{ 
           padding: 0px; 
-          margin: 0px;  
-          h2 {
+          margin: 0px; 
+        
+          h1 {
               font-size: 20px;
               margin: 5px;
               padding-top: 20px;

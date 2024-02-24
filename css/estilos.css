@@ -71,6 +71,29 @@ p {
 .header-paginas nav {
   margin-right: 40px;
 }
+.header-paginas nav ul {
+  justify-content: right;
+}
+
+/* header en comun */
+header nav {
+  width: 100%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 15px;
+}
+header nav ul li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+header nav ul a {
+  color: white;
+  text-decoration: none;
+}
 
 /* Header específico para la página de inicio */
 .header-inicio {
@@ -84,19 +107,14 @@ p {
   align-items: center;
   z-index: 1000;
 }
-
-/* header en comun */
-header ul {
-  list-style: none;
-  display: flex;
+.header-inicio nav {
+  width: 100%;
 }
-header ul li {
-  margin-right: 10px;
-  margin-left: 15px;
+.header-inicio nav ul {
+  justify-content: right;
 }
-header ul a {
-  color: white;
-  text-decoration: none;
+.header-inicio nav ul a {
+  font-size: 1.5rem;
 }
 
 /* Estilo del footer pagina inicio*/
@@ -110,14 +128,18 @@ header ul a {
   width: 100%;
 }
 .footer-inicio img {
-  width: 35px;
+  width: 40px;
   margin-right: 8px;
+}
+.footer-inicio a {
+  font-size: 1.5rem;
 }
 
 /* Estilo de la sección de redes sociales dentro del footer */
 .box-redes {
+  width: 100%;
   text-align: center;
-  font-size: smaller;
+  font-size: 2rem;
 }
 .box-redes .tresimagenes {
   display: flex;
@@ -125,6 +147,12 @@ header ul a {
   justify-content: space-between;
   align-items: left;
   margin-left: 0px;
+}
+.box-redes img {
+  width: 40px;
+}
+.box-redes a {
+  font-size: 1.5rem;
 }
 
 /* Estilo del footer de las demás paginas */
@@ -134,7 +162,7 @@ header ul a {
   width: 100%;
   background-color: #00183a;
   color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
   box-sizing: border-box;
   display: flex;
@@ -337,30 +365,30 @@ form #estacion {
     text-align: center;
     width: 100%;
     margin: 0px 0px;
+    justify-content: center;
   }
   .header-inicio nav ul {
     width: 100%;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-block-start: 5px;
     margin-block-end: 5px;
     padding-inline-start: 0px;
-    font-size: 25px;
   }
   .header-inicio nav ul li {
     margin: 0px 10px 15px 10px;
-    font-size: 25px;
+    justify-content: center;
   }
   .header-inicio nav ul a {
-    font-size: 25px;
-  }
-  .header-inicio .header-inicio ul a {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
   .footer-inicio img {
     width: 55px;
     margin-right: 10px;
+  }
+  .footer-inicio a {
+    font-size: 12px;
   }
   .header-paginas {
     padding: 0;
@@ -383,7 +411,8 @@ form #estacion {
     padding: 0;
     display: flex;
     flex-direction: row;
-    align-content: space-around;
+    justify-content: center;
+    align-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -450,7 +479,7 @@ form #estacion {
     padding: 0px;
     margin: 0px;
   }
-  .infantil-adultos .menu-section h2 {
+  .infantil-adultos .menu-section h1 {
     font-size: 20px;
     margin: 5px;
     padding-top: 20px;
@@ -471,7 +500,7 @@ form #estacion {
   .header-inicio nav ul {
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-block-start: 5px;
     margin-block-end: 5px;
     padding-inline-start: 0px;
@@ -496,18 +525,18 @@ form #estacion {
     width: 100%;
     margin: 0px;
     display: flex;
-    justify-content: center;
   }
   .header-paginas nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: row;
-    align-content: space-around;
+    align-content: right;
     align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: center;
   }
   .header-paginas nav ul li {
     margin: 0px 10px 15px 10px;
@@ -560,7 +589,7 @@ form #estacion {
     padding: 0px;
     margin: 0px;
   }
-  .infantil-adultos .menu-section h2 {
+  .infantil-adultos .menu-section h1 {
     font-size: 20px;
     margin: 5px;
     padding-top: 20px;

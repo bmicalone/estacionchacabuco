@@ -16,9 +16,35 @@
         }
     nav {
         margin-right: 40px; 
+        ul {
+            justify-content: right;
+        }
     }
   }
 
+
+/* header en comun */
+header{
+    nav{
+        width: 100%;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 15px;
+            li {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            a {
+                color: $blanco;
+                text-decoration: none;
+            }
+        }   
+    }
+    
+}
 
 /* Header específico para la página de inicio */
 .header-inicio {
@@ -31,27 +57,17 @@
     justify-content: right;
     align-items: center;
     z-index: 1000;
+    nav{
+        width: 100%;
+        ul{
+            justify-content: right;
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
     
 }
-
-
-
-/* header en comun */
-header{
-    ul {
-        list-style: none;
-        display: flex;
-        li {
-            margin-right: 10px;
-            margin-left: 15px;
-        }
-        a {
-            color: $blanco;
-            text-decoration: none;
-        }
-    }   
-}
-
 
     
   
